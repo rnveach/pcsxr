@@ -1,3 +1,10 @@
 .DS_Store
 *.o
 build/
+
+# visual studio files
+
+.vs/
+Debug/
+Release/
+win32/*.aps
