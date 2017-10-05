@@ -363,7 +363,6 @@ MAIN_LOGO               BITMAP                  "gui\\pcsxr.bmp"
 // RT_MANIFEST
 //
 
-1                       RT_MANIFEST             "gui\\pcsxr.exe.manifest"
 #endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
 
