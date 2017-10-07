@@ -286,12 +286,13 @@ static inline s64 gte_shift(s64 a, int sf) {
 }
 
 s32 BOUNDS(/*int44*/s64 value, int max_flag, int min_flag) {
-	if(value/*.positive_overflow()*/ > S64(0x7ffffffffff))
-		FLAG |= max_flag;
-	
-	if(value/*.negative_overflow()*/ < S64(-0x80000000000))
-		FLAG |= min_flag;
-	
+	// TODO: needs fix for msvc6
+	// if(value/*.positive_overflow()*/ > S64(0x7ffffffffff))
+	//	FLAG |= max_flag;
+
+	// if(value/*.negative_overflow()*/ < S64(-0x80000000000))
+	//	FLAG |= min_flag;
+
 	return gte_shift(value/*.value()*/, m_sf);
 }
 
@@ -381,11 +382,12 @@ u32 Lm_E(u32 result) {
 s64 F(s64 a) {
 	m_mac0 = a;
 
-	if(a > S64(0x7fffffff))
-		FLAG |= (1 << 31) | (1 << 16);
+	// TODO: needs fix for msvc6
+	// if(a > S64(0x7fffffff))
+	//	FLAG |= (1 << 31) | (1 << 16);
 
-	if(a < S64(-0x80000000))
-		FLAG |= (1 << 31) | (1 << 15);
+	// if(a < S64(-0x80000000))
+	//	FLAG |= (1 << 31) | (1 << 15);
 
 	return a;
 }

@@ -1081,7 +1081,7 @@ static int handlecbin(const char *isofile) {
 	{
 		char magic[4];
 		unsigned int header_size;
-		unsigned long long total_bytes;
+		unsigned __int64 total_bytes;	// rveach: changed long long to __int64
 		unsigned int block_size;
 		unsigned char ver;		// 1
 		unsigned char align;
@@ -1140,7 +1140,7 @@ static int handlecbin(const char *isofile) {
 		index &= 0x7fffffff;
 		compr_img->index_table[i] = (index << ciso_hdr.align) | plain;
 	}
-	if (((long long)index << ciso_hdr.align) >= 0x80000000)
+	if (((__int64)index << ciso_hdr.align) >= (__int64)0x80000000)	// rveach: changed long long to __int64
 		SysPrintf("warning: ciso img too large, expect problems\n");
 
 	return 0;

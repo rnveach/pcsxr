@@ -1,2 +1,2 @@
 #include <limits.h>
-#define MAXPATHLEN PATH_MAX//4096
+#define MAXPATHLEN 255

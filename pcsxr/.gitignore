@@ -7,5 +7,4 @@ build/
 .vs/
 Debug/
 Release/
-win32/*.aps
 .settings/
