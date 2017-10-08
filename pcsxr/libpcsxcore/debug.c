@@ -19,6 +19,7 @@
 #include "r3000a.h"
 #include "debug.h"
 #include "socket.h"
+#include "../win32/config.h"
 
 /*
 PCSXR Debug console protocol description, version 1.0

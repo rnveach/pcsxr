@@ -24,7 +24,8 @@
 #ifdef __i386__
 
 #include "ix86.h"
-#include <sys/mman.h>
+#include "../../win32/glue/sys/mman.h"
+#include "../r3000a.h"
 
 #ifndef MAP_ANONYMOUS
 #define MAP_ANONYMOUS MAP_ANON

@@ -20,16 +20,17 @@
 #include <windowsx.h>
 #include <stdio.h>
 #include "plugin.h"
-#include "plugins.h"
-#include "resource.h"
+#include "../../libpcsxcore/plugins.h"
+#include "../resource.h"
 #include <time.h>
 #include <stdio.h>
 
-#include "r3000a.h"
+#include "../../libpcsxcore/r3000a.h"
 #include "Win32.h"
 #include "NoPic.h"
-#include "misc.h"
-#include "sio.h"
+#include "../../libpcsxcore/misc.h"
+#include "../../libpcsxcore/sio.h"
+#include "../config.h"
 
 int ShowPic = 0;
 

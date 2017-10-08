@@ -18,9 +18,9 @@
 
 #include <windows.h>
 #include <windowsx.h>
-#include "resource.h"
+#include "../resource.h"
 #include "AboutDlg.h"
-#include "psxcommon.h"
+#include "../../libpcsxcore/psxcommon.h"
 
 char *LabelAuthors = { N_(
 	"PCSXR - A PlayStation Emulator\n\n"

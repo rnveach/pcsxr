@@ -29,7 +29,7 @@
 extern "C" {
 #endif
 
-#include "config.h"
+#include "../config.h"
 
 // System includes
 #include <stdio.h>
@@ -42,7 +42,7 @@ extern "C" {
 #include <ctype.h>
 #include <sys/types.h>
 #include <assert.h>
-#include <zlib.h>
+#include "../win32/zlib/zlib.h"
 
 // Define types
 typedef int8_t s8;

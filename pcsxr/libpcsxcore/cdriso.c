@@ -35,7 +35,7 @@
 #include <unistd.h>
 #include <limits.h>
 #endif
-#include <zlib.h>
+#include "../win32/zlib/zlib.h"
 
 #ifdef ENABLE_CCDDA
 #include "libavcodec/avcodec.h"
@@ -1140,7 +1140,7 @@ static int handlecbin(const char *isofile) {
 		index &= 0x7fffffff;
 		compr_img->index_table[i] = (index << ciso_hdr.align) | plain;
 	}
-	if ((long long)index << ciso_hdr.align >= 0x80000000ll)
+	if (((long long)index << ciso_hdr.align) >= 0x80000000)
 		SysPrintf("warning: ciso img too large, expect problems\n");
 
 	return 0;

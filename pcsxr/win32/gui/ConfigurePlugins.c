@@ -19,10 +19,10 @@
 #include <windows.h>
 #include <windowsx.h>
 #include <stdio.h>
-#include "psxcommon.h"
+#include "../../libpcsxcore/psxcommon.h"
 #include "plugin.h"
-#include "plugins.h"
-#include "resource.h"
+#include "../../libpcsxcore/plugins.h"
+#include "../resource.h"
 #include "Win32.h"
 
 #define QueryKeyV(name, var) \

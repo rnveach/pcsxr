@@ -20,7 +20,7 @@
 #ifndef __PLUGIN_H__
 #define __PLUGIN_H__
 
-#include "plugins.h"
+#include "../../libpcsxcore/plugins.h"
 
 void GetStateFilename(char *out, int i);
 

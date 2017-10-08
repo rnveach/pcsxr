@@ -24,16 +24,16 @@
 #include <string.h>
 #include <stdarg.h>
 
-#include "resource.h"
+#include "../resource.h"
 #include "AboutDlg.h"
 
-#include "psxcommon.h"
+#include "../../libpcsxcore/psxcommon.h"
 #include "plugin.h"
-#include "debug.h"
+#include "../../libpcsxcore/debug.h"
 #include "Win32.h"
-#include "sio.h"
-#include "misc.h"
-#include "cheat.h"
+#include "../../libpcsxcore/sio.h"
+#include "../../libpcsxcore/misc.h"
+#include "../../libpcsxcore/cheat.h"
 
 #ifdef __MINGW32__
 #ifndef LVM_GETSELECTIONMARK

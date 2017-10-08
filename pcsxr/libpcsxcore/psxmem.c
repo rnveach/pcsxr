@@ -24,7 +24,7 @@
 #include "psxmem.h"
 #include "r3000a.h"
 #include "psxhw.h"
-#include <sys/mman.h>
+#include "../win32/glue/sys/mman.h"
 
 #ifndef MAP_ANONYMOUS
 #define MAP_ANONYMOUS MAP_ANON

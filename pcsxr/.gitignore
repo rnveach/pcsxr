@@ -8,3 +8,4 @@ build/
 Debug/
 Release/
 win32/*.aps
+.settings/

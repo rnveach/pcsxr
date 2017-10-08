@@ -23,10 +23,10 @@
 #endif
 #include <commctrl.h>
 #include <stdio.h>
-#include "psxcommon.h"
-#include "psxmem.h"
-#include "cheat.h"
-#include "resource.h"
+#include "../../libpcsxcore/psxcommon.h"
+#include "../../libpcsxcore/psxmem.h"
+#include "../../libpcsxcore/cheat.h"
+#include "../resource.h"
 #include "Win32.h"
 
 static void UpdateCheatDlg(HWND hW) {

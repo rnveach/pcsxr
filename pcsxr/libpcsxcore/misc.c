@@ -26,6 +26,7 @@
 #include "mdec.h"
 #include "ppf.h"
 #include <stddef.h>
+#include "../win32/config.h"
 
 char CdromId[10] = "";
 char CdromLabel[33] = "";
